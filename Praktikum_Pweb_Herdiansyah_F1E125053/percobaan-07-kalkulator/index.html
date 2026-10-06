@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Nilai Mahasiswa - Praktikum Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app-container">
+        <!-- Bagian Intro -->
+        <section class="intro">
+            <p class="eyebrow">Studi Kasus JavaScript Fundamental</p>
+            <h1>Kalkulator Nilai Mahasiswa</h1>
+            <p>Masukkan nilai tugas, UTS, dan UAS. JavaScript akan menghitung nilai akhir, grade, dan status kelulusan secara otomatis[cite: 39].</p>
+        </section>
+
+        <!-- Bagian Panel Utama -->
+        <section class="panel-grid">
+            <!-- Form Input -->
+            <div class="card-box form-card">
+                <h2>Form Input Nilai</h2>
+                <form id="formNilai">
+                    <div class="input-group">
+                        <label for="nama">Nama Mahasiswa</label>
+                        <input id="nama" type="text" value="Herdiansyah" required>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="tugas">Tugas (30%)</label>
+                            <input id="tugas" type="number" min="0" max="100" value="85" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="uts">UTS (30%)</label>
+                            <input id="uts" type="number" min="0" max="100" value="78" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="uas">UAS (40%)</label>
+                            <input id="uas" type="number" min="0" max="100" value="88" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Hitung Nilai</button>
+                </form>
+            </div>
+
+            <!-- Panel Output Hasil -->
+            <div class="card-box result-card" id="hasilPanel">
+                <h2>Hasil Perhitungan</h2>
+                <div class="placeholder-text">
+                    <p>Klik tombol <strong>Hitung Nilai</strong> untuk melihat hasil analisis data mahasiswa[cite: 40].</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

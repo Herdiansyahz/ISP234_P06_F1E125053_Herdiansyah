@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Tailwind CSS 4</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <nav class="bg-blue-700 text-white p-4 flex justify-between items-center">
+    <a href="#" class="text-xl font-bold">WebTailwind</a>
+    <div class="space-x-4">
+      <a href="#" class="hover:underline">Beranda</a>
+      <a href="#fitur" class="hover:underline">Fitur</a>
+      <a href="#kontak" class="hover:underline">Kontak</a>
+    </div>
+  </nav>
+
+  <section class="text-center py-20 px-4 bg-white">
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Selamat Datang di Landing Page</h1>
+    <p class="text-lg text-gray-600 mb-8">Dibuat dengan Tailwind CSS 4 menggunakan pendekatan utility-first.</p>
+    <a href="#fitur" class="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700">Lihat Fitur</a>
+  </section>
+
+  <section id="fitur" class="py-16 px-4 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-10">Fitur Unggulan</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <h3 class="text-xl font-bold mb-2">Responsif</h3>
+        <p class="text-gray-600">Tampilan menyesuaikan ukuran layar secara otomatis.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <h3 class="text-xl font-bold mb-2">Utility-First</h3>
+        <p class="text-gray-600">Kelas siap pakai untuk mempercepat styling.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <h3 class="text-xl font-bold mb-2">Mudah Dikustomisasi</h3>
+        <p class="text-gray-600">Dapat diubah dengan konfigurasi atau CSS tambahan.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="kontak" class="bg-gray-800 text-white text-center py-6">
+    <p>&copy; 2026 WebTailwind - Praktikum Pemrograman Berbasis Web</p>
+  </footer>
+</body>
+</html>
